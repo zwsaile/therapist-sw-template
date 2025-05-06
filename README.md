@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Therapist Practice Website
+
+A modern, accessible, and responsive website template for therapists and counselors, built with [Next.js](https://nextjs.org/), [React](https://react.dev/), and [Tailwind CSS](https://tailwindcss.com/).
+
+## Table of Contents
+
+- [About](#about)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Available Scripts](#available-scripts)
+- [Project Structure](#project-structure)
+- [Customization](#customization)
+- [Deployment](#deployment)
+- [License](#license)
+
+---
+
+## About
+
+This project provides a professional web presence for therapists, counselors, and mental health professionals. It includes sections for services, approach, qualifications, contact, and more. The design is clean, mobile-friendly, and easy to customize.
+
+## Features
+
+- ⚡️ **Fast**: Built with Next.js for optimal performance and SEO.
+- 🎨 **Customizable**: Easily update content, colors, and branding.
+- 📱 **Responsive**: Looks great on all devices.
+- 🛡️ **Accessible**: Follows accessibility best practices.
+- 📅 **Contact Form**: Secure, email-enabled contact form.
+- 🧑‍🎓 **Qualifications**: Highlight your credentials and approach.
+- 📝 **Easy Deployment**: Deploy to Vercel, Netlify, or your own server.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Node.js](https://nodejs.org/) (v18 or newer recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/therapist-sw-template.git
+   cd therapist-sw-template
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-## Learn More
+3. **Set up environment variables:**
 
-To learn more about Next.js, take a look at the following resources:
+   Create a `.env.local` file in the root directory and add:
+   ```
+   RESEND_API_KEY=your-resend-api-key
+   NOTIFICATION_EMAIL=your-notification-email@example.com
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   These are used for the contact form email functionality.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-## Deploy on Vercel
+   Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Available Scripts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `npm run dev` — Start the development server
+- `npm run build` — Build for production
+- `npm start` — Start the production server
+- `npm run lint` — Run ESLint
+
+## Project Structure
+
+src/
+  app/           # Next.js app directory
+  components/    # Reusable React components
+  pages/         # (If used) Legacy Next.js pages
+  styles/        # Global styles (Tailwind)
+  public/        # Static assets (images, favicon, etc.)
+
+
+## Customization
+
+- **Branding:** Update colors and fonts in `tailwind.config.ts` and `globals.css`.
+- **Content:** Edit the components in `src/components/` to update text, images, and sections.
+- **Contact Form:** The form uses [Resend](https://resend.com/) for email delivery. Update the API key and notification email in your environment variables.
+
+## Deployment
+
+- **Vercel:**
