@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <div className="relative min-h-[600px] w-full">
+    <div className="relative min-h-[600px] w-full mb-16">
       <div className="absolute inset-0">
         <Image
           src="/office-photo.jpg"
