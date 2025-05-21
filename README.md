@@ -95,4 +95,4 @@ src/
 
 ## Deployment
 
-- **Vercel:**
+- Deployed to [Vercel](https://therapist-sw-template-o8llmc1vr-zwsailes-projects.vercel.app/)
